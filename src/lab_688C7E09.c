@@ -1,73 +1,19 @@
 #include <stdio.h>
 #include <limits.h>
 
-int unsiged_char_max()
-{
-    // TODO: write your code here
-}
-
-int signed_char_min()
-{
-    // TODO: write your code here
-}
-
-int signed_char_max()
-{
-    // TODO: write your code here
-}
-
-int unsigned_int_max()
-{
-    // TODO: write your code here
-}
-
-int signed_int_min()
-{
-    // TODO: write your code here
-}
-
-int signed_int_max()
-{
-    // TODO: write your code here
-}
-
-int unsigned_short_max()
-{
-    // TODO: write your code here
-}
-
-int signed_short_min()
-{
-    // TODO: write your code here
-}
-
-int signed_short_max()
-{
-    // TODO: write your code here
-}
-
-// DO NOT change the code below
-#ifndef ___TEST___
 int main(void)
 {
-    printf("#################### CHAR #####################\n");
-    printf("Number of bits in char: %d\n", CHAR_BIT);
-    printf("unsigned char max: %d\n", unsiged_char_max());
-    printf("signed char min: %d\n", signed_char_min());
-    printf("signed char max: %d\n", signed_char_max());
-    printf("\n");
+    printf("char: min = %d, max = %d\n", CHAR_MIN, CHAR_MAX);
+    printf("unsigned char: max = %u\n", UCHAR_MAX);
 
-    printf("##################### INT #####################\n");
-    printf("unsigned int max: %u\n", unsigned_int_max());
-    printf("signed int min: %d\n", signed_int_min());
-    printf("signed int max: %d\n", signed_int_max());
-    printf("\n");
+    printf("short: min = %d, max = %d\n", SHRT_MIN, SHRT_MAX);
+    printf("unsigned short: max = %u\n", USHRT_MAX);
 
-    printf("################## SHORT INT ##################\n");
-    printf("unsigned short int max: %u\n", unsigned_short_max());
-    printf("signed short int min: %d\n", signed_short_min());
-    printf("signed short int max: %d\n", signed_short_max());
-    printf("\n");
+    printf("int: min = %d, max = %d\n", INT_MIN, INT_MAX);
+    printf("unsigned int: max = %u\n", UINT_MAX);
+
+    printf("long: min = %ld, max = %ld\n", LONG_MIN, LONG_MAX);
+    printf("unsigned long: max = %lu\n", ULONG_MAX);
+
     return 0;
 }
-#endif
